@@ -14,7 +14,7 @@ function commonPrefix1(strArray: unknown): number[] {
 
         for (let i = 0; i <= str.length; i++) {
             const l = calculateCommonPrefixLength(str, str.substring(i));
-            totalPrefixLength += l
+            totalPrefixLength += l;
         }
 
         acc.push(totalPrefixLength);
@@ -50,5 +50,5 @@ function validateString(str: unknown, i: number) {
 }
 
 // test
-const inputStrings = ['abcabcd' , 'aa', 'ababaa'];
+const inputStrings = ['abcabcd', 'aa', 'ababaa'];
 console.log(commonPrefix1(inputStrings)); // Outputs [ 10, 3, 11 ]
